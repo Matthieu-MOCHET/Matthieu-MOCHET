@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Pour couvrir toute la page*/
+    background: linear-gradient(to bottom, #6f0dc0, #ff00b3d5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.ligne-separation {
+    border: none;            /* Supprime la bordure par défaut */
+    height: 3px;             /* Épaisseur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    width: 100%;             /* Pleine largeur */
+    margin: 10px 0 30px 0;   /* Marge autour de la ligne */
+}
+
+.bouton-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.bouton-home img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bouton-home img:hover {
+    transform: scale(1.2);
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width:100%;
+}
+
+.button {
+    display: block;
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:hover::before {
+    border-color: white;
+}
+
+.center {
+    margin: 0 auto;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    all: unset;
+}
+
+.Emplacement-projets-gauche{
+    display: flex;
+    gap: 20px; /* espace entre image et texte */
+    padding: 20px;
+
+}
+.Emplacement-projets-droite {
+    display: flex;             
+    flex-direction: row-reverse; /* Inverse l’ordre pour le gauche droite*/
+    gap: 20px;                
+    padding: 20px;           
+}
+
+.texte-projets{
+    border:3px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width:60%;
+}
+
+.titre-projet{
+    text-decoration: underline; /* Souligner */
+    margin-bottom: 10px;
+}
+
+.Images-projets{
+    width: 200px;          
+    height: auto;   
+    border: 3px solid black;
+    border-radius: 10px;   
+    cursor: pointer;       
+}
+
+.resume-projet{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.En-savoir-plus{
+    text-decoration: underline; 
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    color: white;
+}

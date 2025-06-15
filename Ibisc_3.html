@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_concours.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Concours Intégration CN Fanuc 2023</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Concours">
+                    <div class="Bloc-etapes-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-concours"> Etapes clés du concours:</h2>
+                            <hr class="ligne-separation">
+                            <ul class="Sommaire">
+                                <li>Réalisation de l'IHM</li>
+                                <li>Réalisation du programme ISO</li>
+                                <li>Réalisation du programme ladder</li>  
+                                <li>Conclusion</li>                         
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="IHM_Fanuc-2023.jpg" alt="IHM Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation de l'IHM</h2>
+                            <p class="resume-partie-concours">
+                                Pour réaliser l'IHM, nous avions accès au logiciel Fanuc Picture permettant de faciliter la création d'interfaces. 
+                                Nous avions de plus un cahier des charges à suivre nous décrivant le minimum souhaité sur cette dernière.
+                                Nous avons scindé cette IHM en 4 pages principales:
+                                Une page Opérateur pour voir la position des axes, choisir le mode de fonctionnement de la CN.
+                                Une page Etat Machine permettant de vérifier l'état de certains capteurs qui résume l'état global de la CN.
+                                Une page Maintenance permettant de simuler les capteurs afin de répondre au fonctionnement du GRAFCET fourni.
+                                Une page Gestion des alarmes permettant de faire remonter de potentiels problèmes sur la CN.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="ISO_Fanuc-2023.jpg" alt="ISO Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation de l'ISO</h2>
+                            <p class="resume-partie-concours">
+                                Pour réaliser le programme ISO, permettant d'effectuer des déplacements d'axes, des remontées d'alarmes, de messages, nous avions besoin uniquement d'un bloc note.
+                                Il nous a été fourni un cahier des charges à respecter ainsi qu'un GRAFCET permettant de visualiser les différentes étapes à effectuer dans le programme.
+                                Le programme ISO se scinde en plusieurs étapes majeures:
+                                La vérification de la non présence de défauts avant le démarrage de la CN pour le déroulage de bâche.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="Ladder-2023.jpg" alt="Ladder Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation du Ladder</h2>
+                            <p class="resume-partie-concours">
+                            Pour réaliser le Ladder, nous avions à notre disposition un cahier des charges ainsi qu'un GRAFCET décrivant les étapes clés de ce dernier.
+                            De plus nous avons utilisé le logiciel FANUC Ladder III qui nous a permis de créer le Ladder.
+                            Il se découpe en plusieurs parties:
+                            La page des liens entre ISO et IHM permettant d'allumer des LEDs en fonction des actions, la récupération des boutons activés via l'IHM pour activer des étapes dans l'ISO.
+                            La page de gestion de la mémoire permettant de créer des boutons auto-maintiens pour que si des étapes s'activent via plusieurs boutons l'on puisse le faire fonctionner même sur écran tactile.
+                            La page de fonctionnement globale du Ladder en lien avec le GRAFCET fourni.
+                            </p>
+                        </div>
+                    </div>  
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="Conclusion-2023.jpg" alt="Image victoire fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Conclusion du concours:</h2>
+                            <p class="resume-partie-concours">
+                                Une fois ce sous-projet Fanuc effectué, nous avons réalisé un document explicatif de la machine Fanuc ainsi que des logiciels associés et du langage de programmation afin que les futurs étudiants qui comptent se lancer dans l'aventure du concours intégration CN de Fanuc puissent commencer avec de bonnes bases.
+                        </div>
+                    </div> 
+                    <a href="Ibisc_2.html" class="Page-suivante">
+                            <button>Vers le concours Cachan &rarr;</button>
+                    </a>    
+                    
+                    <a href="Ibisc_1.html" class="Page-precedente">
+                            <button> &larr; Vers le concours Fanuc 2024</button>
+                    </a>  
+                </div>
+            </main>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+</script>
+    </body>
+</html>

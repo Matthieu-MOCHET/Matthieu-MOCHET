@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_projets.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Projet Lampe Torche</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Bloc-etapes-projets">
+                    <div class="texte-projets">
+                        <h2 class="titre-projets"> Etapes clés du projet:</h2>
+                        <hr class="ligne-separation">
+                        <ul class="Sommaire">
+                            <li>Simulation de l'électronique de puissance</li>
+                            <li>Réalisation du schéma électrique</li>
+                            <li>Calcul des composants de l'Astable</li>  
+                            <li>Création du typon</li>  
+                            <li>Conclusion</li>                         
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Projets">
+                    <div class="Encadre-projets">
+                        <img src="Chronogramme_lampe.jpg" alt="Image chronogramme" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets">Simulation de l'électronique de puissance</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le premier signal est celui en sortie de la partie commande ici simulé en tant que signal carré.
+                                Signal IL aux bornes de la bobine on y repère ILMAX=47mA.
+                                Signal ID aux bornes de la diode, on y repère ID=10mA.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Schema_electrique_lampe.jpg" alt="Image schéma electrique" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Réalisation du schéma électrique</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le schéma électrique se compose d'une partie commande et d'une partie puissance, la partie commande, c'est le NE555 qui permet de piloter la fréquence d'allumage de la LED et ainsi augmenter sa luminosité.
+                                La partie puissance a pour but d'alimenter la LED malgré le fait que la tension soit inférieure à la tension seuil de la diode. 
+                                Il est composé d'une pile pour alimenter, de la bobine pour assurer une continuité de courant dans le circuit et d'un transistor pour augmenter le courant dans la LED. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Astable_lampe.jpg" alt="Image Astable Lampe" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Calcul des composants pour l'Astable </h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin que la lampe torche ait une luminosité forte, on utilise un NE555 monté en astable permettant ainsi de générer un train d'impulsions, 
+                                au plus la fréquence est élevée, au plus la luminosité sera forte. Pour étalonner la fréquence, 
+                                on utilise des résistances qui permettent de modifier le temps entre chaque impulsion et ainsi régler la fréquence.
+                              </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Typon_lampe.jpg" alt="Typon Lampe" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Création du typon</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Un typon est un schéma électronique permettant de décrire le passage des pistes ainsi que leur taille et l'emplacement des plages d'accueil des composants 
+                                pour pouvoir derrière faire le circuit imprimé et ainsi braser les composants sur ce dernier.          
+                                Pour réaliser le typon, nous avons commencé par faire le schéma électrique sur Winschem 
+                                et ensuite nous l'avons transféré sur wintypon et nous avons redessiné les pistes pour qu'elles soient bien alignées et ne se croisent pas.            
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="Conclusion">
+                        <img src="Conclusion_lampe.jpg" alt="Image conclusion lampe" class="Images-conclusion">
+                        <div class="texte-conclusions">
+                            <h2 class="titre-conclusion"> Conclusion:</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-conclusion">
+                                Le montage fonctionne conformément au cahier des charges. 
+                                La lampe torche éclaire quand on appuie sur le bouton poussoir et fonctionne correctement en étant alimentée par une pile 1,5V.
+                                Afin d'être utilisé, il faudrait que la lampe torche soit placée dans un boitier adapté à son utilisation. 
+                                Il faudrait remplacer le bouton poussoir par un potentiomètre cliquable afin que l'on puisse régler la luminosité.
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>

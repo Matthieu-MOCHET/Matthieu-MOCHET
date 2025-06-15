@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_projets.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Projet Robot Suiveur de Ligne</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Bloc-etapes-projets">
+                    <div class="texte-projets">
+                        <h2 class="titre-projets"> Etapes clés du projet:</h2>
+                        <hr class="ligne-separation">
+                        <ul class="Sommaire">
+                            <li>Réalisation du schéma électrique</li>
+                            <li>Calcul des composants du monostable</li>  
+                            <li>Vérification des chronogrammes</li>  
+                            <li>La version arduino</li>
+                            <li>Réalisation du schéma électrique</li>
+                            <li>Conclusion</li>  
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Projets">
+                    <div class="Encadre-projets">
+                        <img src="Schema_electrique_suiveur.jpg" alt="Image schéma electrique" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Réalisation du schéma électrique</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le schéma électrique se compose de 3 parties principales: l'alimentation du robot sur pile, 
+                                le NE555 en monostable permettant d'arrêter le robot lorsque le robot détecte un robot à sa droite pour lui céder la priorité,
+                                le circuit intégré qui permet de gérer les portes logiques pour le suivi de ligne. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Monostable_suiveur.jpg" alt="Image monostable suiveur" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Calcul des composants pour le monostable</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin que le robot puisse s'arrêter lorsqu'il croise un autre robot à sa droite, nous utilisons un NE555 qui va générer une impulsion permettant de faire arrêter les moteurs du robot.
+                              </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Chronogramme_monostable.jpg" alt="Chronogramme monostable" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Vérification des chronogrammes du monostable</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le NE555 génère bien une impulsion permettant d'arrêter les moteurs. Son fonctionnement est donc validé.            
+                            </p>
+                        </div>
+                    </div>
+                       <div class="Encadre-projets">
+                        <img src="Schema_electrique_suiveur_2.jpg" alt="Image schéma electrique" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Réalisation du schéma électrique</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le schéma électrique se compose de 3 parties principales: les capteurs un télémètre pour détecter les obstacles et un capteur droit et gauche pour détecter la ligne, 
+                                la carte arduino pour piloter les moteurs en fonction des informations des capteurs,
+                                les moteurs pour rouler. 
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                
+                <div style="height: 40px;"></div>
+                <div class="Conclusion">
+                        <img src="Conclusion_suiveur.jpg" alt="Image conclusion suiveur" class="Images-conclusion">
+                        <div class="texte-conclusions">
+                            <h2 class="titre-conclusion"> Conclusion:</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-conclusion">
+                                Le montage fonctionne conformément au cahier des charges. 
+                                Le robot suit correctement la ligne noire au sol. Le robot arrête bien une des 2 roues s’il doit se replacer et arrête les 2 roues lorsqu’il y a un obstacle en vue. La durée d’arrêt est suffisante pour laisser passer un robot.
+                                Afin d’être utilisé, il faudrait que le robot soit placé dans un boîtier adapté à son utilisation. 
+                                Il faudrait remplacer les potentiomètres réglables par un tournevis plat par un potentiomètre bouton que l’on peut tourner facilement à la main.
+                                 Il faudrait le faire fonctionner sur batterie afin de faciliter son utilisation
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>

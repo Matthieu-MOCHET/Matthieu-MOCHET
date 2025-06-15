@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_projets.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Projet robot POB</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Bloc-etapes-projets">
+                    <div class="texte-projets">
+                        <h2 class="titre-projets"> Etapes clés du projet:</h2>
+                        <hr class="ligne-separation">
+                        <ul class="Sommaire">
+                            <li>Algorigramme de la stratégie du robot</li>
+                            <li>Programmation sous logiciel POB</li>
+                            <li>Description des fonctions</li>  
+                            <li>Explication du fonctionnement du capteur de ligne</li>  
+                            <li>Conclusion</li>                         
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Projets">
+                    <div class="Encadre-projets">
+                        <img src="Algorigramme_POB.jpg" alt="Image algorigramme" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets">Algorigramme de la stratégie du robot</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le robot POB évolue dans une arène de type Dohyo, une arène circulaire avec un cercle intérieur pour détecter une sortie.
+                                La stratégie est la suivante: tant que le robot POB ne détecte pas d'adversaire, il va tourner sur lui-même pour le chercher.
+                                Quand il trouve un adversaire, il fonce dessus à pleine vitesse.
+                                S'il détecte une ligne avec son capteur arrière, il doit avancer.
+                                S'il détecte une ligne avec son capteur avant, il doit reculer.
+                                S'il détecte une ligne avec ses 2 capteurs, il doit faire un virage.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Programme_POB.jpg" alt="Image programmation POB" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets">Programmation sous logiciel POB</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin de programmer le robot, un logiciel nous était fourni, c'est de la programmation en C avec une librairie à inclure permettant d'avoir accès aux fonctions spécifiques aux robots POB.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Fonction_POB.jpg" alt="Image fonctions" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Descriptions des fonctions</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le robot POB possède les fonctions suivantes:
+                                Avancer, elle s'effectue avec SetMotor, il suffit d'y entrer 2 valeurs de vitesse moteur (jusqu'à 255) et cela lui permet d'avancer.
+                                Reculer, elle s'effectue avec SetMotor, il suffit d'y entrer 2 valeurs de vitesse moteur en négatif (jusqu'à -255) et cela lui permet de reculer.
+                                Tour sur soi-même, elle s'effectue avec SetMotor, il suffit d'y entrer 2 valeurs de vitesse moteur opposées (jusqu'à 255) et conteneur-principal lui permet de tourner sur lui-même.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Capteur_ligne.jpg" alt="Image capteur ligne" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets">Explication du capteur de ligne</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le capteur de ligne fonctionne de la manière suivante, une photodiode infrarouge va émettre un rayon qui va se réfléchir sur la surface (ici le sol).
+                                Si la surface est noire, le noir étant une couleur qui absorbe la lumière, le phototransistor ne recevra que très peu de signal, qui sera traduit en 0.
+                                Si la surface est blanche, le blanc étant une couleur qui repousse la lumière, le phototransistor recevra un signal fort, qui sera traduit en 1.                  
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="Conclusion">
+                        <img src="Conclusion_POB.jpg" alt="Image Robot POB" class="Images-conclusion">
+                        <div class="texte-conclusions">
+                            <h2 class="titre-conclusion"> Conclusion:</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-conclusion">
+                                Les capteurs fonctionnent suivant le programme utilisé et les consignes données. Le capteur de distance permet de détecter les adversaires pour aller vers eux. Le capteur de ligne permet de détecter les limites du dohyo afin de ne pas en sortir.
+                                Nous les avons paramétrés de la manière suivante. Le robot tourne sur lui-même tant qu'il ne trouve pas d'adversaire. Dès qu’il en détecte un, il lui fonce dessus.
+                                Le programme compte 2 capteurs de ligne, le capteur à l’avant quand il détecte la ligne, le robot se met à reculer (soit parce qu’il a été poussé et que l’avant du robot pointe vers l’extérieur du dohyo, il doit donc reculer pour se remettre dedans. Soit il a poussé un robot adverse à l’extérieur et recule pour éviter de tomber). Avec le capteur de ligne arrière, quand il capte les bords du dohyo, il avance vers l’intérieur du dohyo car il a été repoussé (l’avant est vers l’intérieur du dohyo).
+                                Le robot combat bien selon la stratégie proposée, il est capable d’empêcher les robots de rouler correctement en bloquant ses défenses dans les roues adverses, et les défenses aident à repousser les robots adverses. De plus les défenses étant blanches, elles sont confondues avec les limites du dohyo, ce qui fait que le robot adverse s’en retrouve perturbé.
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>

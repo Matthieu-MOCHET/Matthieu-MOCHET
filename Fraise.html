@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_projets.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Projet plantation automatisée fraisier</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Bloc-etapes-projets">
+                    <div class="texte-projets">
+                        <h2 class="titre-projets"> Etapes clés du projet:</h2>
+                        <hr class="ligne-separation">
+                        <ul class="Sommaire">
+                            <li>Choix des capteurs et des actionneurs</li>
+                            <li>Programmation sur arduino</li>
+                            <li>Création de l'IHM</li>  
+                            <li>Mise en place de la communication à distance</li>  
+                            <li>Conclusion</li>                         
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Projets">
+                    <div class="Encadre-projets">
+                        <img src="Capteurs.jpg" alt="Image capteur" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets">Choix des capteurs et des actionneurs</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Pour s'occuper de notre fraisier à distance, nous avons choisi les capteurs suivants, 
+                                un capteur de température et d'humidité DHT11 afin de récupérer ces données dans l'air ambiant de la plante.
+                                Une sonde d'humidité pour récupérer la quantité d'eau dans le sol.
+                                Un capteur de luminosité pour récupérer la luminosité ambiante.
+                                Un capteur de niveau d'eau pour gérer la quantité d'eau dans le réservoir.
+                                Pour les actionneurs, nous avons choisi une pompe pour arroser la plante, un bandeau LED pour éclairer la plante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Programmation_Fraise.jpg" alt="Image-programmation_arduino" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Programmation sur Arduino</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin de gérer ces capteurs et ces actionneurs, nous avons décidé d'utiliser un arduino UNO, nous avons découpé le fonctionnement en différentes fonctions qui s'activent en fonction de l'état de la plante.
+                                Par exemple si le niveau d'humidité dans le sol est faible, on active la pompe pour arroser la plante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="IHM_Fraise.jpg" alt="Image IHM fraise" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Création de l'IHM </h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                L'IHM pensée à la base était découpée en 5 pages principales.
+                                La page d'accueil qui comprend la température, l'humidité et la luminosité (c'est une page qui résume le tout et reprend les grandes lignes du projet).
+                                La page température pour suivre la température et activer l'ouverture/fermeture de la petite serre en fonction de la température.
+                                La page humidité qui suit l'humidité ambiante, au sol et le niveau d'eau et aussi de pouvoir actionner la pompe pour arroser. 
+                                La page luminosité qui permet d'allumer le bandeau LED et visualiser le niveau de luminosité.
+                                Et enfin la page historique qui sauvegarde les alarmes qui se sont déclenchées avec leur date et leur heure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Tasmotta.jpg" alt="Image communication" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Mise en place de la communication à distance</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Pour récupérer les données de notre plante à distance, nous avons décidé de passer via une raspberry pi sur laquelle nous avons installé influx DB Node RED et Grafana.
+                                Grafana nous permet notamment de réaliser notre interface graphique à partir des données récupérées via influx DB et node RED.     
+                                L'arduino passe par un ESP8266 afin d'envoyer ses données à la raspberry. Cette même raspberry va envoyer les données à une raspberry Serveur afin qu'elles soient accessibles à distance.                      
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="Conclusion">
+                        <img src="Conclusion_Fraise.jpg" alt="Image Schéma de principe" class="Images-conclusion">
+                        <div class="texte-conclusions">
+                            <h2 class="titre-conclusion"> Conclusion:</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-conclusion">
+                                Le projet a été mené à bien, sur toute la partie arduino, il n'y a eu aucun souci. 
+                                Mais pour le passage sur raspberry, il y a eu des soucis de communication des informations à Grafana, 
+                                il n'y avait aucun moyen de récupérer ces informations, sûrement à cause d'un problème de configuration de la raspberry.
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>

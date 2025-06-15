@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_concours.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Concours Robotique Cachan 2024</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Concours">
+                    <div class="Bloc-etapes-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-concours"> Etapes clés du concours:</h2>
+                            <hr class="ligne-separation">
+                            <ul class="Sommaire">
+                                <li>Choix des capteurs et des actionneurs</li>
+                                <li>Réalisation du programme</li>
+                                <li>Modélisation 3D du robot</li>  
+                                <li>Conclusion du concours</li>                         
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="Arduino.jpg" alt="Carte Arduinoc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Choix des capteurs et des actionneurs</h2>
+                            <p class="resume-partie-concours">
+                                Pour notre robot, nous avions un cahier des charges décrivant le fonctionnement du robot.
+                                Nous avons choisi d'utiliser 3 télémètres à ultrasons pour détecter les obstacles et les robots adverses. 
+                                Des LEDs infrarouges ainsi qu'un récepteur infrarouge afin de réaliser une balise pour guider ce dernier.
+                                Des moteurs avec une forte vitesse pour gagner du temps sur les adversaires.
+                                Et pour contrôler tout ça, une carte arduino UNO.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="Programme-Arduino.jpg" alt="Programme Arduino" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation du programme</h2>
+                            <p class="resume-partie-concours">
+                                En lien avec le cahier des charges, nous avons d'abord réalisé un pseudo-code ainsi qu'un schéma des cas possibles nous permettant ainsi de faire fonctionner le robot dans l'arène.
+                                Notre robot devait démarrer au bout de 10s et sortir de sa zone de départ, esquiver les obstacles, esquiver les robots en respectant la priorité à droite et exploser son ballon une fois dans la zone d'arrivée.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="Robot-Lapin.jpg" alt="Lapin 3D" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Modélisation 3D du robot</h2>
+                            <p class="resume-partie-concours">
+                                Pour cette partie, nous étions libres du design du robot, nous sommes partis sur un design de lapin sur roues. Ce dernier devait intégrer des fixations à l'intérieur pour la carte, les moteurs, les capteurs et il devait respecter des contraintes de dimensions.
+                            </p>
+                        </div>
+                    </div>  
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="Conclusion-Cachan.jpg" alt="Image concours" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Conclusion du concours:</h2>
+                            <p class="resume-partie-concours">
+                            Après plusieurs jours d'épreuves permettant de nous qualifier aux différentes phases de poules, nous sommes finalement arrivés 4ème de ce concours.
+                        </div>
+                    </div> 
+                    <a href="Ibisc_1.html" class="Page-precedente">
+                            <button> &larr; Vers le concours Fanuc 2024</button>
+                    </a>    
+
+                    <a href="Ibisc_3.html" class="Page-suivante">
+                            <button>Vers le concours Fanuc 2023 &rarr;</button>
+                    </a>    
+                </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>

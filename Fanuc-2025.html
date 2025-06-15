@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_concours.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Concours Intégration CN Fanuc 2025</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Concours">
+                    <div class="Bloc-etapes-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-concours"> Etapes clés du concours:</h2>
+                            <hr class="ligne-separation">
+                            <ul class="Sommaire">
+                                <li>Réalisation de l'IHM</li>
+                                <li>Réalisation du programme ISO</li>
+                                <li>Réalisation du programme ladder</li>  
+                                <li>Conclusion</li>                         
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="IHM_Fanuc.jpg" alt="IHM Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation de l'IHM</h2>
+                            <p class="resume-partie-concours">
+                                Pour réaliser l'IHM, nous avions accès au logiciel Fanuc Picture permettant de faciliter la création d'interfaces. 
+                                Nous avions de plus un cahier des charges à suivre nous décrivant le minimum souhaité sur cette dernière.
+                                Nous avons scindé cette IHM en 4 pages principales:
+                                Une page Opérateur pour voir la position des axes, choisir le mode de fonctionnement de la CN, voir l'avancée du programme d'impression simulé.
+                                Une page Magasin permettant de sélectionner un matériau parmi 4 ainsi qu'une couleur de bobine grâce à un code.
+                                Une page Maintenance permettant de faire remonter les alarmes ainsi que les erreurs potentielles en fonctionnement.
+                                Une page simulation des capteurs permettant d'effectuer les différentes fonctions du ladder et de l'ISO.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="ISO_Fanuc.jpg" alt="ISO Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation de l'ISO</h2>
+                            <p class="resume-partie-concours">
+                                Pour réaliser le programme ISO, permettant d'effectuer des déplacements d'axes, des remontées d'alarmes, de messages, nous avions besoin uniquement d'un bloc-notes.
+                                Il nous avait été fourni un cahier des charges à respecter ainsi qu'un GRAFCET permettant de visualiser les différentes étapes à effectuer dans le programme.
+                                Le programme ISO se scinde en plusieurs étapes majeures:
+                                La vérification de la non présence de défauts avant le démarrage de la CN pour l'impression.
+                                Choix du matériau et de la couleur d'impression.
+                                Impression de l'objet sélectionné via son propre programme ISO qui décrit chaque mouvement à réaliser par la CN afin de réussir cette dernière.
+                                Et enfin si problème lors des différentes étapes, on reboucle pour reprendre au début.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="Ladder.jpg" alt="Ladder Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Réalisation du Ladder</h2>
+                            <p class="resume-partie-concours">
+                            Pour réaliser le Ladder, nous avions à notre disposition un cahier des charges ainsi qu'un GRAFCET décrivant les étapes clés de ce dernier.
+                            De plus nous avons utilisé le logiciel FANUC Ladder III qui nous a permis de créer le Ladder.
+                            Il se découpe en plusieurs parties:
+                            La page des liens entre ISO et IHM permettant d'allumer des LEDs, en fonction des actions, la récupération des boutons activés via l'IHM pour activer des étapes dans l'ISO.
+                            La page de gestion de la mémoire permettant de créer des boutons auto-maintien pour que si des étapes s'activent via plusieurs boutons l'on puisse le faire fonctionner même sur écran tactile.
+                            La page de fonctionnement globale du Ladder en lien avec le GRAFCET fourni.
+                            </p>
+                        </div>
+                    </div>  
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="Conclusion.jpg" alt="Image victoire fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Conclusion du concours:</h2>
+                            <p class="resume-partie-concours">
+                                Après une journée d'épreuve consistant à présenter notre projet complet en fonctionnement, 
+                                des quiz sur la connaissance de la machine ainsi que de FANUC, 
+                                une épreuve de correction de pannes sur la machine et une épreuve de sous-projet faisant suite à notre projet principal, 
+                                nous nous sommes hissés à la 1ère place du podium avec 133 points.
+                        </div>
+                    </div>          
+                </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+</script>
+    </body>
+</html>

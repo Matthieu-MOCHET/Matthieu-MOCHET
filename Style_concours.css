@@ -1,0 +1,174 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Pour couvrir toute la page, même si le contenu déborde */
+    background: linear-gradient(to bottom, #6f0dc0, #ff00b3d5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.ligne-separation {
+    border: none;            /* Supprime la bordure par défaut */
+    height: 3px;             /* Épaisseur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    width: 100%;             /* Pleine largeur */
+    margin: 10px 0 30px 0;   /* Marge autour de la ligne */
+}
+
+.bouton-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.bouton-home img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bouton-home img:hover {
+    transform: scale(1.2);
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width:100%;
+}
+
+.button {
+    display: block;
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:hover::before {
+    border-color: white;
+}
+
+.center {
+    margin: 0 auto;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    all: unset;
+}
+
+.Bloc-etapes-concours {
+    display: flex;
+    justify-content: center; /* Centre horizontalement le bloc */
+    margin-bottom: 40px;     
+}
+
+.Bloc-etapes-concours .titre-concours {
+    text-align: center;        
+}
+
+.Bloc-etapes-concours .Sommaire{
+    font-size: 20px;
+    
+}
+
+.Emplacement-encadre-gauche{
+    display: flex;
+    gap: 20px; /* espace entre image et texte */
+    padding: 20px;
+
+}
+.Emplacement-encadre-droite {
+    display: flex;             
+    flex-direction: row-reverse; /* Inverse l’ordre */
+    gap: 20px;                /* Comme l’autre bloc, pour garder l’espace */
+    padding: 20px;       
+}
+
+.Emplacement-encadre-gauche .texte-concours,
+.Emplacement-encadre-droite .texte-concours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+}
+
+.texte-concours{
+    border:3px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width:60%;
+}
+
+.titre-partie-concours{
+    text-decoration: underline; /* Pour souligner */
+    margin-bottom: 10px;
+}
+
+.Images-concours{
+    width: auto;          
+    height: auto;   
+    object-fit:contain;
+    aspect-ratio: auto;
+    border: 3px solid black;
+    border-radius: 10px;   
+    cursor: pointer;       
+}
+
+.resume-partie-concours{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.Page-suivante{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline; /* Pour souligner */
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.Page-precedente{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: underline; /* Pour souligner */
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    color: white;
+}

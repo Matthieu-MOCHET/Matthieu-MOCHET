@@ -1,0 +1,263 @@
+body, html {
+    min-height: 100vh;
+    padding: 0;
+    background: linear-gradient(to bottom, #6f0dc0, #ff00b3d5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.ligne-separation {
+    border: none;            /* Supprime la bordure par défaut */
+    height: 3px;             /* Épaisseur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    width: 100%;             /* Pleine largeur */
+    margin: 10px 0 30px 0;   /* Marge autour de la ligne */
+}
+
+.bouton-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.bouton-home img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bouton-home img:hover {
+    transform: scale(1.2);
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width:100%;
+}
+
+.button {
+    display: block;
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:hover::before {
+    border-color: white;
+}
+
+.content {
+    padding: 20px 0;
+}
+.center {
+    margin: 0 auto 40px auto;
+    width: 40%;
+    text-align: center;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+.Bloc-etapes-projets {
+    display: flex;
+    justify-content: center; /* Centre horizontalement le bloc */
+    margin-bottom: 40px;      /* Optionnel : ajoute un peu d'espace après */
+}
+
+.Bloc-etapes-projets .titre-projets {
+    text-align: center;         /* Le texte (titres + liste) reste aligné à gauche */
+}
+
+.Bloc-etapes-projets .Sommaire{
+    font-size: 20px;
+    
+}
+
+.texte-projets{
+    border:3px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width:90%;
+}
+
+.Projets{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.Encadre-projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;              /* 35% de la largeur de la fenêtre */
+    max-width: 600px;         /* Limite pour les grands écrans */
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 20px;
+    box-sizing: border-box;   /* Pour que padding ne casse pas la taille */
+    text-decoration:none;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing:border-box;
+}
+
+.Images-projets{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.texte-partie-projets{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.titre-partie-projets{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.resume-partie-projets{
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Conclusion{
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding:20px;
+    width: 90%;
+    max-width: 800px;      /* ou une autre limite souhaitée */
+    margin: 0 auto;        /* centre horizontalement */
+
+}
+.Images-conclusion{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.titre-conclusion{
+    text-align: center;
+}
+
+.resume-conclusion{
+    text-align: justify;
+    font-size: 20px;
+}
+
+button:hover {
+    color: white;
+}
+
+.bloc-images {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.titre-bloc {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.conteneur-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* utile si la page est étroite */
+}
+
+.conteneur-images img {
+    width: 350px; /* ajuster taille image*/
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.conteneur-images img:hover {
+    transform: scale(1.05);
+}
+
+.Encadre-CV {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    gap:10px;
+    margin-top: 60px;
+}
+
+.cadre-CV {
+     width: auto;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 0;
+    overflow: hidden;
+}
+
+.image-CV {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.icone-youtube {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.icone-youtube img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icone-youtube:hover {
+    transform: scale(1.1);
+}

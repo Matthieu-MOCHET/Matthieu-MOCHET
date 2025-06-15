@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_concours.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Stage dans l'entreprise MCSA-SET</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Concours">
+                    <div class="Bloc-etapes-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-concours"> Missions principales du stage</h2>
+                            <hr class="ligne-separation">
+                            <ul class="Sommaire">
+                                <li>Vérification brasures visuelle et AOI</li>
+                                <li>Vérifications vernissage des cartes</li>
+                                <li>Essais de boitiers/cartes sur banc de tests</li>  
+                                <li>Conclusion</li>                         
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="Brasures.jpg" alt="Images brasures IPC et AOI" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours">Vérification brasures visuelle et AOI</h2>
+                            <p class="resume-partie-concours">
+                                L'entreprise MCSA-SET travaillant pour le domaine aéronautique, les brasures doivent respecter la norme IPC-A-610 classe 3.
+                                Les brasures doivent former un cône autour de la patte du composant, il doit y avoir une quantité suffisante de brasure sur la plage d'accueil pour assurer une bonne tenue de cette dernière.
+                                Les brasures ne doivent pas dépasser la plage d'accueil pour éviter de potentiels straps avec les autres composants.
+                                Ces vérifications sont faites visuellement pour le traversant.
+                                Pour les composants CMS, l'entreprise est équipée d'un AOI, une machine capable de prendre en photo les cartes électroniques et de viser des composants afin que l'on puisse vérifier les brasures, le bon sens des composants, la bonne référence des composants et la présence des composants.
+                                Pour ce qui est des brasures, un flash RGB est envoyé au moment de la photographie du composant permettant ainsi à la manière dont il se reflète de vérifier la bonne brasure de ce dernier.
+                                Rouge =90°, Vert=60° et Bleu=45°, l'idéal étant d'avoir un dégradé de rouge à vert à bleu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="Vernis.jpg" alt="ISO carte vernis" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Vérification Vernis</h2>
+                            <p class="resume-partie-concours">
+                                Dans le domaine de l'aéronautique, les cartes doivent être vernies, cela permet de protéger les composants de la température, de l'humidité.
+                                Afin de vérifier sa présence, le vernis possède un traceur UV (un produit sensible aux UV) le vernis va ainsi une fois sous lampe UV changer de couleur et passer en blanc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Emplacement-encadre-gauche">
+                        <img src="Banc_test.jpg" alt="Ladder Fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Essais cartes et boitiers sur banc de test</h2>
+                            <p class="resume-partie-concours">
+                                Avant d'être envoyé chez le client, le boitier/carte est testé sur un banc de test pour vérifier son bon fonctionnement. 
+                                Ces bancs répondent aux exigences des clients et permettent de vérifier que le boitier/carte est bien conforme.
+                                Ces bancs de tests sont très variés et remontent des informations de différentes manières, via des LEDs, en communiquant avec un logiciel.
+                                Ils sont parfois combinés avec d'autres appareils de mesure (multimètres, fréquencemètre...) permettant ainsi de remplir les PV avant que le boitier soit envoyé au client.
+                            </p>
+                        </div>
+                    </div>  
+
+                    <div class="Emplacement-encadre-droite">
+                        <img src="Conclusion_MCSA.jpg" alt="Image victoire fanuc" class="Images-concours">
+                        <div class="texte-concours">
+                            <h2 class="titre-partie-concours"> Conclusion du stage:</h2>
+                            <p class="resume-partie-concours">
+                                Lors de ce stage, j'ai beaucoup appris sur l'électronique, j'ai pu découvrir un environnement de travail très contrôlé et sécurisé pour les cartes et les boitiers.
+                                Les normes de qualité sont très exigeantes et permettent la bonne qualité des cartes et des boitiers.
+                                Je pense avoir bien réussi les vérifications des normes de brasure que ce soit à la loupe binoculaire ou à l'AOI ou aussi les essais des cartes sur banc de test.
+                                Je pense avoir moins réussi le dépannage de cartes, il est assez difficile de dépanner des cartes en pannes car les cartes possèdent beaucoup de composants, parfois encore vernis ce qui n'aide pas à la mesure.
+                            </p>
+                        </div>
+                    </div>          
+                </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+</script>
+    </body>
+</html>

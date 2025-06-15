@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_projets.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Projet Métronome</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Bloc-etapes-projets">
+                    <div class="texte-projets">
+                        <h2 class="titre-projets"> Etapes clés du projet:</h2>
+                        <hr class="ligne-separation">
+                        <ul class="Sommaire">
+                            <li>Chronogramme sorties des astables</li>
+                            <li>Réalisation du schéma électrique</li>
+                            <li>Calcul des composants de l'Astable</li>  
+                            <li>Création du typon</li>  
+                            <li>Conclusion</li>                         
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Projets">
+                    <div class="Encadre-projets">
+                        <img src="Chronogramme_metronome.jpg" alt="Image chronogramme" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets">Visualisation des chronogrammes des astables</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le premier signal est celui qui contrôle la fréquence de battement du métronome.
+                                Le second signal est celui qui contrôle la hauteur du son du métronome.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Schema_electrique_metronome.jpg" alt="Image schéma electrique" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Réalisation du schéma électrique</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Le schéma électrique se décompose en 3 parties principales, le 1er NE555 permettant de piloter la fréquence de battement du haut parleur du métronome.
+                                Le 2ème NE555 permettant de piloter la hauteur du son du haut-parleur pour qu'il soit plus ou moins grave.
+                                Et enfin l'alimentation du tout via une alimentation externe 15V. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Astable_metronome.jpg" alt="Image Astable Métronomes" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Calcul des composants pour les Astables </h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin que le métronome puisse être piloté en fréquence de battement ainsi qu'en hauteur de son, 
+                                2 NE555 sont utilisés en astables afin qu'ils puissent générer des trains d'impulsions.
+                                Ces 2 NE555 ont une particularité, ils ont un potentiomètre permettant de piloter ces fréquences.
+                              </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Typon_metronome.jpg" alt="Typon Metronome" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Création du typon</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Un typon est un schéma électronique permettant de décrire le passage des pistes ainsi que leur taille et l'emplacement des plages d'accueil des composants 
+                                pour pouvoir, derrière faire le circuit imprimé et ainsi braser les composants sur ce dernier.          
+                                Pour réaliser le typon, nous avons commencé par faire le schéma électrique sur Winschem 
+                                et ensuite nous l'avons transféré sur wintypon et nous avons redessiné les pistes pour qu'elles soient bien alignées et ne se croisent pas.            
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="Conclusion">
+                        <img src="Conclusion_metronome.jpg" alt="Image conclusion Metronome" class="Images-conclusion">
+                        <div class="texte-conclusions">
+                            <h2 class="titre-conclusion"> Conclusion:</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-conclusion">
+                                Le montage fonctionne conformément au cahier des charges. Le dispositif émet des
+                                battements dont la fréquence peut être réglée via un potentiomètre entre 40 et 208
+                                battements par minute. La fréquence du son peut aussi être réglée via un autre potentiomètre
+                                entre 250 et 10000Hz.
+                                Afin d'être utilisé, il faudrait que le métronome soit placé dans un boitier. Il faudrait remplacer
+                                les potentiomètres réglables par un tournevis plat par un potentiomètre bouton que l'on peut
+                                tourner facilement à la main.
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>

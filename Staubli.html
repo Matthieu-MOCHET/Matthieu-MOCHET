@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio_MOCHET_Matthieu</title>
+        <link href="Style_projets.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="content">
+            <main class="conteneur-principal">
+                <a href="index.html" class="bouton-home" alt="Bouton Home">
+                    <img src="bouton-home.jpg">
+                </a>
+                <div class="center">
+                    <h1 class="Titre">Projet bras robot Staubli</h1> 
+                    <hr class="ligne-separation">
+                    <div class="boutons">
+                        <a href="Page_projets.html" class="button">Projets</a>
+                        <a href="Page_concours.html" class="button">Concours</a>
+                        <a href="Page_experiences_pro.html"class="button">Expériences Professionnelles</a>
+                        <a href="Page-perso.html"class="button">&#192; propos</a>
+                    </div>
+                </div>
+
+                <div class="Bloc-etapes-projets">
+                    <div class="texte-projets">
+                        <h2 class="titre-projets"> Etapes clés du projet:</h2>
+                        <hr class="ligne-separation">
+                        <ul class="Sommaire">
+                            <li>Installation du bras robot</li>
+                            <li>Programmation sous SRS</li>
+                            <li>Installation des capteurs de sécurité</li>  
+                            <li>Réalisation d'une armoire électrique</li>  
+                            <li>Conclusion</li>                         
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Projets">
+                    <div class="Encadre-projets">
+                        <img src="Staubli.jpg" alt="Image Bras Robot et table" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Installation bras robot Staubli</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Pour installer le robot, il nous a fallu récupérer une table sur roue où y percer des trous afin de pouvoir le fixer.
+                                Cette table a ensuite été poncée afin de lui redonner un meilleur aspect général.
+                                Une fois le bras robot fixé sur la table, nous avons dû lui fabriquer une prise en reliant les fils du connecteur à une prise standardisée.
+                                Enfin, nous avons relié le contrôleur au bras robot ainsi que la tablette de contrôle, nous permettant ainsi de pouvoir le piloter manuellement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="SRS.jpg" alt="Image-programmation_SRS" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Programmation du bras robot Staubli</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin de déplacer le robot automatiquement, nous avons dû programmer le robot.
+                                Cette programmation se fait sous le logiciel SRS, nous avons ainsi pu réaliser les déplacements pour que le robot puisse écrire des lettres, qu'il puisse faire du pick and place.
+                                Enfin, via la programmation, le robot a un comportement programmé en fonction de ce que détectent les capteurs installés.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Laser_SICK.jpg" alt="Image scrutateur laser SICK" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Installation de capteurs de sécurité</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Afin d'utiliser le bras robot en toute sécurité et pouvoir lui faire faire des démonstrations sans problème, nous avons dû installer des capteurs de sécurité.
+                                Nous avions pour cela accès à un scrutateur laser de SICK, ainsi qu'un capteur d'ouverture/fermeture de porte.
+                                Pour le scrutateur laser, nous avons dû, via le logiciel SICK définir des zones à surveiller, trouver quelles sorties du scrutateur changeaient d'état lorsque quelqu'un passait dans cette zone, et enfin le brancher au contrôleur.
+                                Le scrutateur surveillait ainsi 2 zones, une zone pour déclencher un arrêt d'urgence et une autre pour faire ralentir le bras robot.
+                                Pour ce qui est du capteur de porte, il fonctionne simplement avec un aimant. Une fois la compréhension du capteur et de ses sorties effectuée, nous avons pu le brancher au controleur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Encadre-projets">
+                        <img src="Armoire-electrique.jpg" alt="Image armoire + schéma electrique" class="Images-projets">
+                        <div class="texte-projets">
+                            <h2 class="titre-partie-projets"> Réalisation d'une armoire électrique</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-partie-projets">
+                                Pour relier nos capteurs à notre contrôleur, nous avons réalisé une armoire électrique, car le contrôleur fonctionnait avec des arrêts d'urgences à double actionnement.
+                                Ainsi nous avons dû utiliser des contacteurs, nous permettant ainsi d'activer les 2 entrées du contrôleur à la fois. 
+                                Le contacteur est piloté par notre capteur et il ferme le passage entre les signaux entrée-sortie des arrêts d'urgence permettant ainsi de déclencher un arrêt d'urgence ou de modifier une valeur de variable et ainsi pouvoir faire par exemple ralentir le bras robot.                           
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="Conclusion">
+                        <img src="Conclusion_Staubli.jpg" alt="Image Conclusion" class="Images-conclusion">
+                        <div class="texte-conclusions">
+                            <h2 class="titre-conclusion"> Conclusion:</h2>
+                            <hr class="ligne-separation">
+                            <p class="resume-conclusion">
+                                Le projet a été mené à bien, le robot peut écrire, faire du pick and place. 
+                                Le scrutateur laser permet de ralentir le robot voire même de le mettre en arrêt d'urgence. 
+                                Le capteur de fermeture/d'ouverture de porte permet de ralentir le bras robot.
+                                L'armoire est bien câblée et les fils utilisés sont repérés par des numéros afin de faciliter la lisibilité de cette dernière.
+                                Une piste d'amélioration possible: Ajouter un télémètre à ultrason ou une caméra qui seront des capteurs qui ne feront pas seulement du tout ou rien et permettraient ainsi de plus ou moins ralentir le robot en fonction de la proximité d'un opérateur avec le robot, ou alors lui faire faire des actions spécifiques à la reconnaissance de couleurs par caméra.
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.conteneur-principal').style.minWidth = "1500px";
+            });
+        </script>
+    </body>
+</html>
